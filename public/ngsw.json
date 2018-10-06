@@ -1,0 +1,83 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/inline.57928a118a2cd2f88454.bundle.js",
+        "/main.9e737c6ec7b2292d41d5.bundle.js",
+        "/polyfills.83130eaf3d30922d4fa7.bundle.js",
+        "/styles.ac7b290c2c5b1164d351.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/img/404.png",
+        "/assets/img/app-store-badge.png",
+        "/assets/img/google-play-badge.png",
+        "/assets/img/icon-128x128.png",
+        "/assets/img/icon-144x144.png",
+        "/assets/img/icon-152x152.png",
+        "/assets/img/icon-192x192.png",
+        "/assets/img/icon-384x384.png",
+        "/assets/img/icon-512x512.png",
+        "/assets/img/icon-72x72.png",
+        "/assets/img/icon-96x96.png",
+        "/assets/img/mc-web-logo.png",
+        "/assets/img/mufti-menk-150x150.png",
+        "/assets/mp3/Molana-Do-Dafa-Farishtay-Rooya.mp3"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "tasks-users-api",
+      "patterns": [
+        "https:\\/\\/www\\.muslimcentral\\.com\\/wp-json\\/wp\\/v2",
+        "https:\\/\\/www\\.muslimcentral\\.com\\/wp-json\\/wp\\/v2\\/categories\\/",
+        "https:\\/\\/muslim-central-web-app\\.firebaseio\\.com\\/",
+        "https:\\/\\/muslim-central-web-app\\.firebaseio\\.com\\/subscriptions\\/",
+        "https:\\/\\/muslim-central-web-app\\.firebaseio\\.com\\/favourites\\/",
+        "https:\\/\\/muslim-central-web-app\\.firebaseio\\.com\\/playlist\\/",
+        "\\/users"
+      ],
+      "strategy": "performance",
+      "maxSize": 20,
+      "maxAge": 3600000,
+      "timeoutMs": 5000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/inline.57928a118a2cd2f88454.bundle.js": "b807a7d540bdec420fe0d959dd440ff15035351a",
+    "/assets/img/404.png": "9d290e83fd7abe61e1daa67874fab77fe50f20d1",
+    "/main.9e737c6ec7b2292d41d5.bundle.js": "2b3d94c3d8369782ad54eded8f9c398d4e0e6dcf",
+    "/assets/img/app-store-badge.png": "20b9139713f31aad3318aaae1f933106cebd358d",
+    "/polyfills.83130eaf3d30922d4fa7.bundle.js": "38bc689ef6321233cb61e38f141aaf63c05f4d56",
+    "/assets/img/google-play-badge.png": "19ca64dd87a016e6b6e17020e7bd5f0a330261c5",
+    "/styles.ac7b290c2c5b1164d351.bundle.css": "d8575a448d3cec6c33985d19d0212ab9e1e4c408",
+    "/assets/img/icon-128x128.png": "8a65df46cb7a2572585b83994b372680c716061f",
+    "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/assets/img/icon-144x144.png": "9c50b76d87f18be1da974de94be2b453a8f247c5",
+    "/index.html": "b6948944f803dfc608c491781eb0704e98a12747",
+    "/assets/img/icon-152x152.png": "69e3da19f0bda8639b4895005cb237c421c4bad6",
+    "/assets/img/icon-192x192.png": "7a447cf3e6b1c6b37d0184d4582bef6c6470890d",
+    "/assets/img/icon-384x384.png": "1752a38bdd39226ff77d03aa685178c6c0a159a8",
+    "/assets/img/icon-512x512.png": "1752a38bdd39226ff77d03aa685178c6c0a159a8",
+    "/assets/img/icon-72x72.png": "76781e9beeb67ff0ea7f279529dd96c2a0065147",
+    "/assets/img/icon-96x96.png": "d88172bff004b648b4145cac38960bbedb68a94a",
+    "/assets/img/mc-web-logo.png": "8c137c5b2f6246ce87412e3a463ccdf8d2cef296",
+    "/assets/img/mufti-menk-150x150.png": "ca957bfe2489425aef84cdbe6f4f99719c48a9ce",
+    "/assets/mp3/Molana-Do-Dafa-Farishtay-Rooya.mp3": "c8b7aecc1be50dc66264733ba2ed1297e34f09cd"
+  }
+}

@@ -1,0 +1,51 @@
+.mat-icon {
+    color: #ffa200;
+}
+.cust-icon {
+    font-size: 55px;
+    z-index: 999;
+    position: absolute;
+    left: 70px;
+    top: 40px;
+}
+.cust-img {
+    margin-left: -38px;
+}
+.cust-btn {
+    background: transparent;
+    border: none;
+}
+.cust-player {
+    text-align: center;
+}
+.cust-margin {
+    margin-left: -30px;
+}
+.cust-link {
+    color: #ffa200;
+}
+.cust-subs-btn{
+    background: #ffa200;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.cust-unsubs-btn{
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffa200;
+}
+.mat-icon {
+    color: #fff;
+    font-size: 20px;
+}
+.load-more {
+    display: block !important;
+    margin: 0 auto;
+    background-color: #ffa200 !important;
+    color: #fff !important;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center !important;
+    max-width: 200px;
+}

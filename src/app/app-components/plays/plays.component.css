@@ -1,0 +1,314 @@
+.mat-icon {
+    color: #ffa200;
+}
+.cust-icon {
+    font-size: 55px;
+    z-index: 999;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+.cust-img {
+    opacity: 0.5;
+    margin-left: -38px;
+}
+.cust-btn {
+    background: transparent;
+    border: none;
+    position: relative !important;
+}
+.cust-player {
+    text-align: center;
+}
+.cust-margin {
+    margin-left: -30px;
+}
+.mat-chip {
+    height: 26px;
+}
+.cust-plays-btn {
+    background-color: #ffa200;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.cust-share {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    font-size: 22px;
+}
+.cust-share .fa-facebook-square {
+    color: #266596;
+}
+.cust-share .fa-twitter {
+    color: #00b0ed;
+}
+
+.cust-share .fa-google-plus {
+    color: #e05949;
+}
+
+/*style for custom card */
+
+.widget-card {
+    padding: 10px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,.05);
+    margin-bottom: 10px;
+}
+.featured-image{
+    position: relative;
+    top: -30px;
+}
+.card-detail h2 {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 24px;
+    margin: 0;
+    padding-top: 10px;
+}
+.card-detail h3 {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+}
+.card-detail span {
+    font-size: 13px;
+    font-weight: bold;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.card-detail p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 13px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.card-detail a {
+    color: #FFA200;
+    font-weight: 500;
+}
+.card-detail .feat-link {
+    text-transform: uppercase;
+}
+.featured-image img {
+    width: 100% !important;
+}
+.featured-image button {
+    background: transparent;
+    border: navajowhite;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    font-size: 40px;
+    color: #FFA200;
+}
+.card-detail a i {
+    font-size: 16px;
+}
+.social-icons {
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+.card-detail {
+    position: relative;
+}
+.social-icons ul li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.social-icons ul li a i{
+    font-size: 24px;
+}
+.social-icons ul li a.twitter i {
+    color: #1DA1F2;
+}
+.social-icons ul li a.facebook i {
+    color: #3B5998;
+}
+.left-list-down ul {
+    margin: 0;
+}
+.left-list-down ul li{
+  display: inline-block;
+    font-size: 13px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+.left-list-down ul li i{
+    color: #FFA200;
+    padding-right: 5px;
+}
+.row.m-0{
+    margin-bottom: 0;
+}
+.down-card {
+    padding-top: 10px;
+}
+
+.right-list-down ul {
+    margin: 0;
+}
+.right-list-down ul li i{
+    color: #FFA200;
+    padding-right: 5px;
+}
+.right-list-down ul li{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 2px 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+.right-list-down {
+    text-align: right;
+}
+.inner-list-detail li span {
+    float: right;
+}
+.inner-list-detail {
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+}
+.palylist-detail {
+    padding-top: 15px;
+
+}
+.inner-list-detail ol {
+    margin: 0;
+    padding-left: 15px;
+}
+.inner-list-detail ol li a{
+    font-weight: 500;
+    font-size: 13px;
+    padding-bottom: 8px;
+    color: #000;
+    transition: all ease-in-out 0.4s;
+}
+.inner-list-detail ol li {
+    transition: all ease-in-out 0.4s;
+    padding-left: 8px
+}
+.inner-list-detail li span {
+    color: gray;
+}
+.inner-list-detail li:hover, .inner-list-detail li a:hover {
+    color: #FFA200 !important;
+}
+.inner-list-detail li.active a, .inner-list-detail li.active{
+    color: #FFA200 !important
+}
+.inner-list-detail li.active:before {
+    content: "\f028";
+    position: absolute;
+    left: -17px;
+    font-family: FontAwesome;
+    top: 0;
+}
+.inner-list-detail li.active {
+    position: relative;
+    list-style: none;
+}
+
+@media (max-width: 992px){
+    .right-list-down ul li span {
+        display: none;
+    }
+    .right-list-down ul li i{
+        color: #000;
+    }
+    .right-list-down ul li {
+        margin-left: 0;
+    }
+    .card-detail h2 {
+        width: 70%;
+    }
+}
+
+
+#bars {
+    left: 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+    width: 40px;
+}
+
+.bar {
+    background: #FFA200 !important;
+    bottom: 1px;
+    height: 3px;
+    position: absolute;
+    width: 3px;
+    animation: sound 0ms -800ms linear infinite alternate;
+}
+
+@keyframes sound {
+    0% {
+        opacity: .35;
+        height: 3px;
+    }
+    100% {
+        opacity: 1;
+        height: 28px;
+    }
+}
+
+.bar:nth-child(1)  { left: 1px; animation-duration: 474ms; }
+.bar:nth-child(2)  { left: 5px; animation-duration: 433ms; }
+.bar:nth-child(3)  { left: 9px; animation-duration: 407ms; }
+.bar:nth-child(4)  { left: 13px; animation-duration: 458ms; }
+.bar:nth-child(5)  { left: 17px; animation-duration: 400ms; }
+.bar:nth-child(6)  { left: 21px; animation-duration: 427ms; }
+.bar:nth-child(7)  { left: 25px; animation-duration: 441ms; }
+.bar:nth-child(8)  { left: 29px; animation-duration: 419ms; }
+.bar:nth-child(9)  { left: 33px; animation-duration: 487ms; }
+.bar:nth-child(10) { left: 37px; animation-duration: 442ms; }
+
+.bar:nth-child(11) { left: 41px; animation-duration: 412ms; }
+.bar:nth-child(12) { left: 45px; animation-duration: 425ms; }
+.bar:nth-child(13) { left: 49px; animation-duration: 445ms; }
+.bar:nth-child(14) { left: 53px; animation-duration: 485ms; }
+.bar:nth-child(15) { left: 57px; animation-duration: 465ms; }
+.bar:nth-child(16) { left: 61px; animation-duration: 425ms; }
+
+.bar:nth-child(17) { left: 65px; animation-duration: 412ms; }
+.bar:nth-child(18) { left: 69px; animation-duration: 425ms; }
+.bar:nth-child(19) { left: 73px; animation-duration: 445ms; }
+.bar:nth-child(20) { left: 77px; animation-duration: 485ms; }
+.bar:nth-child(21) { left: 81px; animation-duration: 465ms; }
+.bar:nth-child(22) { left: 85px; animation-duration: 425ms; }
+
+.bar:nth-child(23) { left: 89px; animation-duration: 412ms; }
+.bar:nth-child(24) { left: 93px; animation-duration: 425ms; }
+.bar:nth-child(25) { left: 97px; animation-duration: 445ms; }
+.bar:nth-child(26) { left: 101px; animation-duration: 485ms; }
+.bar:nth-child(27) { left: 105px; animation-duration: 465ms; }
+.bar:nth-child(28) { left: 109px; animation-duration: 425ms; }
+.bar:nth-child(29) { left: 113px; animation-duration: 495ms; }
+.bar:nth-child(30) { left: 117px; animation-duration: 455ms; }

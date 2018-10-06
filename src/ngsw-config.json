@@ -1,0 +1,46 @@
+{
+  "index": "/index.html",
+  "assetGroups": [{
+    "name": "app",
+    "installMode": "prefetch",
+    "resources": {
+      "files": [
+        "/favicon.ico",
+        "/index.html"
+      ],
+      "versionedFiles": [
+        "/*.bundle.css",
+        "/*.bundle.js",
+        "/*.chunk.js"
+      ]
+    }
+  }, {
+    "name": "assets",
+    "installMode": "lazy",
+    "updateMode": "prefetch",
+    "resources": {
+      "files": [
+        "/assets/**"
+      ]
+    }
+  }],
+  "dataGroups": [
+  {
+    "name": "tasks-users-api",
+    "urls": [
+      "https://www.muslimcentral.com/wp-json/wp/v2",
+      "https://www.muslimcentral.com/wp-json/wp/v2/categories/",
+      "https://muslim-central-web-app.firebaseio.com/",
+      "https://muslim-central-web-app.firebaseio.com/subscriptions/",
+      "https://muslim-central-web-app.firebaseio.com/favourites/",
+      "https://muslim-central-web-app.firebaseio.com/playlist/",
+      "/users"],
+    "cacheConfig": {
+      "strategy": "performance",
+      "maxSize": 20,
+      "maxAge": "1h",
+      "timeout": "5s"
+    }
+  }
+]
+}

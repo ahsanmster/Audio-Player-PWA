@@ -1,0 +1,108 @@
+
+<!-- start loading -->
+<app-loader *ngIf="loading"></app-loader>
+<!-- end loading -->
+<div class="container mt-8">
+  <div class="row" *ngFor="let playlist of playlists; let i = index;">
+      <div class="col m12 s12">
+          <div class="widget-card">
+              <div class="upper-card">
+                  <div class="row m-0">
+                      <div class="col l2 m3 s5">
+                          <div class="featured-image">
+                              <button [class.hide]="playToggle && playlist.id === selectedPlays" (click)="onPlaylist(playlist.link, playlist.id)"><i class="fa fa-play" aria-hidden="true"></i></button>
+                              <button *ngIf="playToggle && playlist.id === selectedPlays" (click)="onPlaylist(playlist.link, playlist.id)"><i class="fa fa-pause" aria-hidden="true"></i></button>
+                              <img src="../assets/img/mufti-menk-150x150.png" alt="Photo of a Shiba Inu">
+                          </div>
+                      </div>
+                      <div class="col l10 m9 s7">
+                          <div class="card-detail">
+                              <h2></h2>
+                              <h3>{{ playlist.name }}</h3>
+                              <!-- <span>Feat. <a href="#" class="feat-link">Partynextdoor</a></span> -->
+                              <!-- <p>Album: {{ playlist.name}}</p> -->
+                              <!-- <p>Added on <br> -->
+                              <!-- <a href="#"> <i class="fa fa-check-circle" aria-hidden="true"></i></a></p> -->
+                              <div class="social-icons">
+                                  <ul>
+                                      <li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                      <li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                  <div id='bars' *ngIf="playlist.id === selectedPlays && showProgress">
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                      <div class='bar'></div>
+                  </div>
+              <div class="down-card">
+                  <div class="row m-0">
+                      <div class="col m6 s6">
+                          <div class="left-list-down">
+                              <ul>
+                                  <li><i class="fa fa-play" aria-hidden="true"></i>(77.9K)</li>
+                                  <li><i class="fa fa-star" aria-hidden="true"></i>(1.11K)</li>
+                                  <li><i class="fa fa-repeat" aria-hidden="true"></i>(116)</li>
+                                  <li><i class="fa fa-plus" aria-hidden="true"></i>(974)</li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col m6 s6">
+                          <div class="right-list-down">
+                              <ul>
+                                  <!-- <li><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Buy</span></li> -->
+                                  <li ><i class="fa fa-star" aria-hidden="true"></i><span>Add to Favorite</span></li>
+                                  <li ><i class="fa fa-star" aria-hidden="true"></i><span>Favorite</span></li>
+                                  <!-- <li ><i class="fa fa-plus" aria-hidden="true"></i><span>Add to Watch Later</span></li> -->
+                                  <!-- <li ><i class="fa fa-plus" aria-hidden="true"></i><span>Watch Later</span></li> -->
+                                  <!-- <li><i class="fa fa-code" aria-hidden="true"></i><span>Embed</span></li> -->
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="palylist-detail" *ngIf="playlist.id == selectedPlays && plays.length > 0">
+                  <div class="inner-list-detail">
+                      <ol>
+                          <!-- <li class="active"><a href="#">Higher We Go (Intro) <span>4.15</span></a></li> -->
+                          <li [class.active] = "play.audio.url === playNow" *ngFor="let play of plays;" (click)="onPlay(play.audio.url)"><a> {{ play.info.title}}<span></span></a></li>
+                      </ol>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div *ngFor="let play of plays">
+  <app-player *ngIf="play.audio.url === playNow" [url]="play.audio.url"></app-player>
+</div>

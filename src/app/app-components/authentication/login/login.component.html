@@ -1,0 +1,57 @@
+<!-- start loading -->
+<app-loader *ngIf="loading"></app-loader>
+<!-- end loading -->
+
+<div class="container mt-12">
+  <div class="row login-card">
+      <div class="login-inner">
+          <div class="col m6 s12">
+              <div class="login-detail">
+                  <h2>Sign In to Muslim Center</h2>
+                  <div class="input-field">
+                    <input id="email" type="email" [(ngModel)]="email" name="email" placeholder="Email">
+                  </div>
+                  <div class="input-field">
+                  <input id="password" type="password" [(ngModel)]="password" name="password" placeholder="Passwprd">
+                  </div>
+                  <mat-chip-list>
+                    <mat-chip class="cust-login" (click)="login()">SIGN IN</mat-chip>
+                  </mat-chip-list>
+              </div>
+          </div>
+          <div class="col m6 s12">
+                <div class="social-login">
+                    <p>* If you already have an account we will merge it with your existing account if the email address from Social matches your Muslim Center account.</p>
+                    <ul>
+                        <li class="cust-google" (click)="loginWithGoogle()"> <i class="fa fa-google-plus mr-1"></i> GOOGLE SIGN IN</li>
+                        <li class="cust-facebook" (click)="loginWithFacebook()"><i class="	fa fa-facebook-square mr-1"></i> FACEBOOK SIGN IN</li>
+                        <li class="cust-twitter"><i class="fa fa-twitter mr-1"></i>TWITTER SIGN IN</li>
+                    </ul>
+                </div>
+          </div>
+      </div>
+    <!--<form class="card col m8 offset-m2">-->
+      <!--<span class="card-title"><strong>Sign in</strong></span>-->
+      <!--<div class="card-content">-->
+          <!--<div class="cust-error">{{message}}</div>-->
+          <!--<div class="row">-->
+              <!--<div class="input-field col s12">-->
+                <!--<input id="email" type="email" [(ngModel)]="email" name="email" class="search-field" placeholder="Email">-->
+              <!--</div>-->
+          <!--</div>-->
+          <!--<div class="row">-->
+            <!--<div class="input-field col s12">-->
+              <!--<input id="password" type="password" [(ngModel)]="password" name="password" class="search-field" placeholder="Passwprd">-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<mat-chip-list>-->
+              <!--<mat-chip class="cust-login" (click)="login()">SIGN IN</mat-chip>-->
+              <!--<mat-chip class="cust-google" (click)="loginWithGoogle()"> <i class="fa fa-google-plus mr-1"></i> GOOGLE SIGN IN</mat-chip>-->
+              <!--<mat-chip class="cust-facebook" (click)="loginWithFacebook()"><i class="	fa fa-facebook-square mr-1"></i> FACEBOOK SIGN IN</mat-chip>-->
+              <!--<mat-chip class="cust-twitter"><i class="fa fa-twitter mr-1"></i>TWITTER SIGN IN</mat-chip>-->
+              <!--&lt;!&ndash; <mat-chip class="cust-github" >GITHUB SIGN IN</mat-chip> &ndash;&gt;-->
+            <!--</mat-chip-list>-->
+      <!--</div>-->
+    <!--</form>-->
+  </div>
+</div>

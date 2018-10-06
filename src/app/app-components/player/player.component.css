@@ -1,0 +1,85 @@
+audio::-webkit-media-controls-panel {
+    position: fixed;
+    bottom: 0px;
+    z-index: 40;
+    background-color: hsl(38, 78%, 51%);
+    height: 60px;
+}
+/* audio::-webkit-media-controls-current-time-display{
+  color: #ffa200;
+}
+audio::-webkit-media-controls-time-remaining-display {
+  color: #ffa200;
+}
+audio::-webkit-media-controls-mute-button {
+  background: #ffa200 !important;
+} */
+/* audio::-webkit-media-controls-timeline {
+  background: #ffa200;
+} */
+
+/* :host {
+    position: fixed;
+    left: calc(50% - 124px);
+    bottom: 80px;
+    z-index: 40;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 17px;
+    padding-left: 17px;
+  }
+  
+  .btn-group {
+    color: orange;
+    border-color: orange;
+  }
+  .btn-group .btn {
+    color: inherit;
+    border-color: inherit;
+    border-radius: 0;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+  .btn-group .btn:first-child {
+    border-left-color: inherit;
+  }
+  .btn-group .btn:last-child {
+    border-right-color: inherit;
+  }
+  .btn-group .btn:hover {
+    border-right-color: inherit;
+    border-left-color: inherit;
+  }
+  
+  .btn {
+    height: 47px;
+    width: 47px;
+    background-color: transparent;
+    color: orange;
+    border-color: orange;
+    border-radius: 23.5px;
+    font-size: 16.45px;
+  }
+  .btn:hover {
+    box-shadow: 0 0 0 1px orange;
+  }
+  .btn:focus:hover {
+    box-shadow: 0 0 0 1px orange;
+  }
+  .btn:focus {
+    box-shadow: none;
+  }
+
+.cust-icon {
+  margin-top: 12px;
+  margin-left: -12px
+}
+   */

@@ -1,0 +1,106 @@
+.search-field {
+    background-color: #f3f3f3 !important;
+    border-radius: 50px !important;
+    width: 100% !important;
+    height: 35px !important;
+    border-bottom: none !important;
+    padding-left: 30px !important;
+}
+input[type=email]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.input-field label {
+    top: -5px;
+    left: 30px;
+}
+input[type=email]:not(.browser-default):focus:not([readonly])+label {
+    color: #9e9e9e !important;
+}
+input[type=password]:not(.browser-default):focus:not([readonly])+label {
+    color: #9e9e9e !important;
+}
+input[type=password]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.btn {
+    background-color: #ffa200;
+    border-radius: 25px;
+}
+.cust-signup {
+    background-color: #ffa200;
+    color: #fff;
+}
+.cust-google{
+    background-color: #e05949;
+    color: #fff;
+}
+.cust-facebook{
+    background-color: #266596;
+    color: #fff;
+}
+.cust-twitter{
+    background-color: #00b0ed;
+    color: #fff;
+}
+.cust-github{
+    background-color: #28a745;
+    color: #fff;
+}
+
+
+
+
+.login-card {
+    border: 1px solid #ccc;
+    padding: 30px;
+}
+.login-detail h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.login-detail {
+    display: inline-block;
+    width: 100%;
+    border-right: 1px solid #ccc;
+    padding-right: 30px;
+
+}
+.login-detail input {
+    border-radius: 5px !important;
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+    padding: 0 10px !important;
+    box-sizing: border-box !important;
+    margin-bottom: 10px;
+}
+.login-detail .cust-login {
+    width: 100%;
+    text-align: center !important;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 12px;
+    margin-bottom: 30px;
+}
+.social-login p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.social-login ul li {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 767px){
+    .login-detail {
+        border-right: none;
+        padding-right: 0;
+    }
+}

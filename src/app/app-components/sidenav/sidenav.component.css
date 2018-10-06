@@ -1,0 +1,146 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.example-is-mobile .example-toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 4;
+}
+
+img.example-app-name {
+  margin-left: 50px;
+}
+
+.example-sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+}
+
+.example-is-mobile .example-sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+     `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}
+.mat-nav-list .mat-list-item {
+  color: #444; 
+}
+.mat-nav-list .mat-list-item:hover {
+    background: transparent;
+    color: #000000;
+}
+.mat-icon {
+  color: #ffa200;
+}
+.mat-drawer-transition .mat-drawer-content {
+  background: #f4f4f4;
+}
+.cust-font {
+  font-size: 12px;
+  font-weight: bold;   
+}
+button:focus {
+  outline: none;
+  background-color: #ffa200;
+}
+.cust-icon{
+  color: #fff !important;
+}
+.mat-icon-button {
+  background: #ffa200;
+}
+.search-form {
+  margin: 0 auto;
+  width: 30%;
+}
+.social-icon {
+  margin: 5px;
+  width: 20px;
+  height: 25px;
+  display: inline;
+  float: left;
+}
+.cust-para {
+  color: #ffa200;
+  font-size: 14px;
+  margin-left: 65px;
+}
+.cust-anchor {
+  color: #ffa200;
+  font-size: 14px;
+}
+.btn {
+  background-color: #ffa200;
+  font-size: 14px;
+  border-radius: 25px;
+}
+.user-menu {
+  position: relative;
+  /* right: 0; */
+  font-size: 40px;
+}
+.notifications {
+  font-size: 40px;
+}
+.mat-menu-item .mat-icon:not([color]) {
+  color: #ffa200;
+}
+.cust-label {
+  text-align: left;
+}
+@media only screen and (max-width: 600px) {
+  .example-container {
+    margin-top: 32px;
+  }
+  .white {
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    height: 64px;
+  }
+}
+/* @media only screen and (max-width: 420px) {
+  .search-form {
+    display: none;
+  }
+  .user-menu {
+    margin-left: 50px;
+  }
+  .notifications {
+    margin-left: 100px;
+  }
+} */
+.cust-donate {
+  font-size: 40px;
+  color: #ffa200;
+}
+.white {
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+  padding-right: 0;
+}
+.white .mat-icon-button {
+  border-radius: 0;
+  width: 63px;
+  height: 63px;
+  line-height: 63px;
+}
+#cust-scroll {
+  padding: 20px;
+}
+#cust-scroll .mat-list-item {
+  height: 35px;
+}
+#cust-scroll .mat-list-item-content {
+  padding-left: 0 !important;
+}
+.app-store-button img {
+  margin-bottom: 30px;
+}

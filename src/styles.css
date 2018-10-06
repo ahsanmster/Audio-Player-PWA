@@ -1,0 +1,85 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+
+/* Custom Scroll bar */
+/*
+ *  STYLE 2
+ */
+
+ #cust-scroll::-webkit-scrollbar-track
+ {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     border-radius: 10px;
+     background-color: #F5F5F5;
+ }
+ 
+ #cust-scroll::-webkit-scrollbar
+ {
+     width: 12px;
+     background-color: #F5F5F5;
+ }
+ 
+ #cust-scroll::-webkit-scrollbar-thumb
+ {
+     border-radius: 10px;
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+     background-color: #ffa200;
+ }
+
+/* Custom Css Clasess */
+.ml-1 {
+    margin-left: 5px;
+}
+.ml-2 {
+    margin-left: 10px;
+}
+.ml-3 {
+    margin-left: 15px;
+}
+.ml-4 {
+    margin-left: 20px;
+}
+.ml-5 {
+    margin-left: 25px;
+}
+.mr-1 {
+    margin-left: 5px;
+}
+.mt-4 {
+    margin-top: 20px;
+}
+.mt-8 {
+    margin-top: 40px;
+}
+.mt-12 {
+    margin-top: 60px;
+}.mr-6 {
+    margin-right: 40px;
+}
+.mr-8 {
+    margin-right: 30px;
+}
+.mr-4{
+    margin-right: 20px;
+}
+.mr-1 {
+    margin-right: 5px; 
+}
+.mb-1{
+    margin-bottom: 5px;
+}
+.pad-2 {
+    padding: 10px;
+}
+.mat-nav-list .mat-list-item {
+    font-size: 12px;
+}
+.mat-icon[_ngcontent-c1] {
+    color: #ffa200;
+    font-size: 19px;
+}
+.cust-error{
+    color: red;
+}
+
